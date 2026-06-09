@@ -3,71 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peddi (2026) Movie Player</title>
+<title>Peddi 2026 Movie</title>
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:Arial, sans-serif;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-    body{
-        background:#111;
-        color:#fff;
-        text-align:center;
-    }
+body{
+    background:#000;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
 
-    .container{
-        max-width:1200px;
-        margin:auto;
-        padding:20px;
-    }
+.container{
+    width:95%;
+    max-width:1200px;
+    text-align:center;
+}
 
-    h1{
-        margin:20px 0;
-        color:#ffcc00;
-        font-size:2.5rem;
-    }
+h1{
+    margin-bottom:20px;
+    font-size:2rem;
+}
 
-    .movie-info{
-        margin-bottom:20px;
-        color:#ccc;
-    }
+video{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(255,255,255,0.2);
+    background:#000;
+}
 
-    video{
-        width:100%;
-        max-width:1000px;
-        border-radius:10px;
-        box-shadow:0 0 20px rgba(255,204,0,0.4);
-    }
-
-    .footer{
-        margin-top:20px;
-        color:#888;
-    }
+.movie-info{
+    margin-top:15px;
+    font-size:18px;
+}
 </style>
 </head>
 <body>
 
 <div class="container">
-
     <h1>🎬 Peddi (2026)</h1>
 
-    <div class="movie-info">
-        <p>Watch Peddi (2026) Online</p>
-    </div>
-
-    <video controls autoplay>
-        <source src="peddi_2026_movie.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video controls autoplay preload="metadata">
+        <source
+            src="https://drive.google.com/uc?export=download&id=1zgbhfix-hW0O7FjoliaU1BpgH65_Jkxg"
+            type="video/mp4">
+        Your browser does not support HTML5 video.
     </video>
 
-    <div class="footer">
-        <p>© 2026 Peddi Movie Player</p>
+    <div class="movie-info">
+        File Name: <strong>peddi_2026_movie.mp4</strong>
     </div>
-
 </div>
 
 </body>
